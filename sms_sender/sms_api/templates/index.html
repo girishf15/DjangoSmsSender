@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Sms Sending Application</title>
+</head>
+
+<body>
+    <center>
+        <h1> Sms Sending Application</h1>
+
+        <table>
+        <form method="POST">
+            {% csrf_token %}
+
+            <input type="text" name="number" size=10 placeholder="Enter Receiver Number"><br><br>
+            <textarea type="text" name="message" column="80" rows="20" placeholder="Enter your message"></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+
+        </form>
+        </table>    
+       
+    </center>
+</body>
